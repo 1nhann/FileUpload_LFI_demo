@@ -16,7 +16,11 @@ func main() {
 		request_file = os.Args[2]
 	} else {
 		hp = "9.inhann.top:20009"
+<<<<<<< HEAD
 		request_file = "./exp/request.txt"
+=======
+		request_file = "./request.txt"
+>>>>>>> 5ff65d418c59e77747d6c8b2bf50573765c330e8
 	}
 	block := make(chan bool, 1)
 	content, _ := ioutil.ReadFile(request_file)
