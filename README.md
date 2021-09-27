@@ -1,8 +1,8 @@
 [toc]
 
-# php 文件上传 条件竞争 小demo
+# FileUpload LFI demo
 
-## unlink 删除文件
+## [unlink 文件上传 条件竞争](https://github.com/1nhann/FileUpload_LFI_demo/tree/master/unlink_race_condition)
 
 ```php
 <?php
@@ -77,7 +77,7 @@ Content-Length: 1
 
 ---
 
-## session upload_progress 文件包含 条件竞争
+## [session upload_progress 文件包含 条件竞争](https://github.com/1nhann/FileUpload_LFI_demo/tree/master/session_race_condition_lfi)
 
 ```php
 <?php
@@ -158,7 +158,7 @@ Content-Type: application/octet-stream
 [session upload_progress 文件包含 Golang exp](https://github.com/1nhann/FileUpload_LFI_demo/blob/master/session_race_condition_lfi/exp/exp.go)
 
 
-## session upload_progress 文件包含 直接包含
+## [session upload_progress session未被清理 直接包含](https://github.com/1nhann/FileUpload_LFI_demo/tree/master/session_not_clean_lfi)
 
 phpinfo
 
@@ -189,7 +189,7 @@ curl -F "PHP_SESSION_UPLOAD_PROGRESS=aaa" -F '<?php phpinfo();?>=@evil.php'  htt
 
 
 
-## phpinfo 临时文件包含 条件竞争 
+## [phpinfo 临时文件包含 条件竞争](https://github.com/1nhann/FileUpload_LFI_demo/tree/master/iphpinfo_lfi)
 
 参考：https://github.com/vulhub/vulhub/tree/master/php/inclusion
 
@@ -225,7 +225,7 @@ phpinfo();
 
 
 
-## php://filter/string.strip_tags 令 php7.0 崩溃
+## [php://filter/string.strip_tags 令 php7.0 崩溃](https://github.com/1nhann/FileUpload_LFI_demo/tree/master/include_crash)
 
 适用版本：
 
