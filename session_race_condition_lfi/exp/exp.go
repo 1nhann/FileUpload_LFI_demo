@@ -16,7 +16,7 @@ func main() {
 		request_file = os.Args[2]
 	} else {
 		hp = "9.inhann.top:20009"
-		request_file = "/home/inhann/Repo_Proj/Coding/puzzles/include_session/exp/request.txt"
+		request_file = "./exp/request.txt"
 	}
 	block := make(chan bool, 1)
 	content, _ := ioutil.ReadFile(request_file)
