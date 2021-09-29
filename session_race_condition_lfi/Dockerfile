@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:7.4.16-apache
 ENV AUTHOR="inHann"
 ENV DEBIAN_FRONTEND=noninteractive
 COPY ./include.php /var/www/html/index.php
