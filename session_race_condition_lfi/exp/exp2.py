@@ -1,4 +1,3 @@
-import io
 import requests
 import threading
 event=threading.Event()
