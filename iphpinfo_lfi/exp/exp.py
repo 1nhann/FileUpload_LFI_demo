@@ -4,7 +4,7 @@ from socket import socket,AF_INET,SOCK_STREAM,gethostbyname
 import requests
 import threading
 import sys
-
+ 
 
 tag="SECURITY"
 payload=f"""{tag}
